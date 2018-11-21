@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Udemy_MemoryTricks
 {
@@ -13,7 +9,7 @@ namespace Udemy_MemoryTricks
 
         public static void Demo()
         {
-            for (int i = 0; i < 500000; i++)
+            for (int i = 0; i < 500_000; i++)
             {
                 //var obj = new WithoutDispose();
                 using (var obj = new WithDispose())

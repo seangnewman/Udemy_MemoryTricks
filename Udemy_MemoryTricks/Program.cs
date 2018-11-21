@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Udemy_MemoryTricks
 {
@@ -74,7 +70,9 @@ namespace Udemy_MemoryTricks
 
             //FinalizerDemo();
 
-            DisposePattern.Demo();
+            //DisposePattern.Demo();
+            //Avoid_Boxing.Demo();
+            Structs_vs_Classes.Demo();
         }
 
         private static void FinalizerDemo()
