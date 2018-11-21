@@ -70,12 +70,31 @@ namespace Udemy_MemoryTricks
         {
             //ReferenceAndValueTypes();
 
+            //BoxingAndUnboxing();
+
+            //FinalizerDemo();
+
+            DisposePattern.Demo();
+        }
+
+        private static void FinalizerDemo()
+        {
+            int count = 0;
+
+            while (!Console.KeyAvailable)
+            {
+                new MyObject(count++);
+            }
+            Console.WriteLine("Terminating process");
+        }
+
+        private static void BoxingAndUnboxing()
+        {
             int a = 1234;
             object b = a;
             int c = (int)b;
 
             Console.WriteLine(c);
-
         }
 
         private static void ReferenceAndValueTypes()
